@@ -46,10 +46,13 @@ public class Main {
             System.out.println(goku.getNombre() + " eligió a " + pokeGoku.getNombre());
 
             System.out.print(ash.getNombre() + ": ¿Usar habilidad especial? (si/no): ");
-            boolean usarHabilidadAsh = sc.next().equalsIgnoreCase("s");
+String respuestaAsh = sc.next();
+boolean usarHabilidadAsh = respuestaAsh.length() > 0 && respuestaAsh.charAt(0) == 's';
 
-            System.out.print(goku.getNombre() + ": ¿Usar habilidad especial? (si/no): ");
-            boolean usarHabilidadGoku = sc.next().equalsIgnoreCase("s");
+System.out.print(goku.getNombre() + ": ¿Usar habilidad especial? (si/no): ");
+String respuestaGoku = sc.next();
+boolean usarHabilidadGoku = respuestaGoku.length() > 0 && respuestaGoku.charAt(0) == 's';
+
 
             if (usarHabilidadAsh) pokeAsh.activarHabilidad();
             if (usarHabilidadGoku) pokeGoku.activarHabilidad();
@@ -107,3 +110,4 @@ public class Main {
         }
     }
 }
+
