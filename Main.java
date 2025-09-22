@@ -9,15 +9,15 @@ public class Main {
         Habilidad h3 = new Habilidad("Impacto Relámpago", "dañoEnemigo", 10, 50);
         Habilidad h4 = new Habilidad("Agua de poseidón", "ataque", 12, 40);
 
-        Pokemon p1 = new Pokemon("Charmander", "Fuego", 50, 30, h1);
-        Pokemon p2 = new Pokemon("Bulbasaur", "Planta", 45, 35, h2);
-        Pokemon p3 = new Pokemon("Squirtle", "Agua", 40, 40, h3);
-        Pokemon p4 = new Pokemon("Pikachu", "Eléctrico", 55, 25, h4);
+        Pokemon p1 = new PokemonFuego("Charmander", 50, 30, h1);
+        Pokemon p2 = new PokemonPlanta("Bulbasaur", 45, 35, h2);
+        Pokemon p3 = new PokemonAgua("Squirtle", 40, 40, h3);
+        Pokemon p4 = new PokemonElectrico("Pikachu", 55, 25, h4);
 
-        Pokemon q1 = new Pokemon("Charizard", "Fuego", 52, 33, h3);
-        Pokemon q2 = new Pokemon("Turtwig", "Planta", 43, 37, h1);
-        Pokemon q3 = new Pokemon("Totodile", "Agua", 42, 38, h2);
-        Pokemon q4 = new Pokemon("Raichu", "Eléctrico", 50, 28, h4);
+        Pokemon q1 = new PokemonFuego("Charizard", 52, 33, h3);
+        Pokemon q2 = new PokemonPlanta("Turtwig", 43, 37, h1);
+        Pokemon q3 = new PokemonAgua("Totodile", 42, 38, h2);
+        Pokemon q4 = new PokemonElectrico("Raichu", 50, 28, h4);
 
         Entrenador ash = new Entrenador("Ash", p1, p2, p3, p4);
         Entrenador goku = new Entrenador("Goku", q1, q2, q3, q4);
